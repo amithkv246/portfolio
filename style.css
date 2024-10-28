@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #0b0a08;
+    color: #fafafa;
+    font-family: "Plus Jakarta Sans", serif;
+    font-optical-sizing: auto;
+}
+
+header {
+    background-color: #0b0a08;
+    padding: 2rem 5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .title {
+    font-size: 3rem;
+}
+
+.card {
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    padding: 2rem 10rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.icons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 8rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.icons button:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 8rem;
+    animation: mybutton 5s infinite;
+}
+
+@keyframes mybutton {
+    0% {
+        box-shadow: 0px 0px 20px 3.5px rgb(255, 0, 0);
+    }
+    25% {
+        box-shadow: 0px 0px 30px 3.5px rgb(38, 0, 255);
+    }
+    50% {
+        box-shadow: 0px 0px 20px 3.5px rgb(255, 0, 0);
+    }
+    75% {
+        box-shadow: 0px 0px 30px 3.5px rgb(38, 0, 255);
+    }
+    100% {
+        box-shadow: 0px 0px 20px 3.5px rgb(255, 0, 0);
+    }
+}
+
+
+.hero .description {
+    width: 60%;
+    margin: 2rem 0rem;
+}
+
+.edu-grid {
+    display: grid;
+    grid-template-columns: repeat(15, auto);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.duration {
+    background-color: #000;
+    color: #fff;
+    border-radius: 3rem;
+    font-size: small;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 3px 2px #777;
+
+    
+}
+
+.expGrid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    
+
+}
+.month {
+    background-color: #000;
+    color: #fff;
+    border-radius: 1.7rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 3px 2px #777;
+    padding: 1rem 2rem;
+}
+
+
+@media screen and (max-width:768px) {
+    header {
+        background-color: #0b0a08;
+        padding: 2rem 2rem;
+    }
+
+
+    .hero {
+        height: calc(100vh - 6rem);
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0rem 1.5rem;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2rem;
+        padding: 2rem 2rem;
+    }
+
+    .hero .description {
+        width: 80%;
+        margin: 1.2rem 0rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    header {
+        background-color: #0b0a08;
+        padding: 2rem 1rem;
+    }
+
+    .hero {
+        height: calc(100vh - 6rem);
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0rem 1.5rem;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 2rem;
+        padding: 2rem 2rem;
+    }
+
+    .hero .description {
+        width: 95%;
+        margin: 0.8rem 0rem;
+    }
+
+}
